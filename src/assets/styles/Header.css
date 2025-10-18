@@ -1,0 +1,51 @@
+/* Todos los Nav.Link dentro del Navbar */
+.navbar .navlink,
+.navbar .navlink-inicio {
+  color: black; /* color por defecto */
+  position: relative; /* importante para que ::after se posicione correctamente */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover para links normales con subrayado animado */
+.navbar .navlink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.navbar .navlink:hover::after {
+  width: 100%;
+}
+
+.navbar .navlink:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* Link “Inicio” siempre rojo y bold */
+.navbar .navlink-inicio {
+  color: red;
+  font-weight: bold;
+}
+
+/* Subrayado fijo para “Inicio” */
+.navbar .navlink-inicio::after {
+  content: '';
+  position: absolute;
+  width: 100%; /* subrayado del ancho del link */
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: red;
+}
+
+/* Opcional: ajustar espacio entre links y navbar */
+.navbar .nav-link {
+  margin-right: 12px;
+}
