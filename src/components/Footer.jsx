@@ -128,7 +128,7 @@ export default function Footer() {
 				</Row>
 				<hr />
 				<p className="text-center mb-0">
-					© 2025 BikeCorps. Todos los derechos reservados.
+					© 2025 BIKECORPS. Todos los derechos reservados.
 				</p>
 			</Container>
 		</footer>

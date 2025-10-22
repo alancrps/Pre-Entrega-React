@@ -6,8 +6,8 @@ export default function Login() {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        localStorage.setItem('isAuth', 'true');
-        navigate('/perfil/usuario123');
+        localStorage.setItem('auth', 'true');
+        navigate('/profile/usuario123');
     }
 
     return (

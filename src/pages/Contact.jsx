@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 
-export default function Contacto() {
+export default function Contact() {
 	return (
 		<Container className="mt-4">
 			<h1>Contacto</h1>
