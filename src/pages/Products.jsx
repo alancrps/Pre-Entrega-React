@@ -4,10 +4,11 @@ import { Container } from 'react-bootstrap';
 
 const Products = () => {
 	return (
-		<Container className="my-5">
-			<h1 className="mb-4 text-center">Nuestras Motos</h1>
-			<ProductList />
-		</Container>
+		<Container className="mt-5 text-center">
+				<h2>Nuestras motos destacadas</h2>
+				<p>Explorá nuestra selección de motos más populares.</p>
+                <ProductList/>
+			</Container>
 	);
 };
 

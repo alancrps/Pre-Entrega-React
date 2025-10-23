@@ -13,6 +13,7 @@ import NotFound from './pages/NotFound';
 import Login from './pages/Login';
 import Products from './pages/Products';
 import Profile from './pages/Profile';
+import '../src/App.css'
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 			{/* Header */}
 			<Header />
 			{/* Rutas */}
+			
 			<Routes>
 				<Route path="/" element={<HomePage />}></Route>
 				<Route path="/login" element={<Login />}></Route>
@@ -30,6 +32,7 @@ function App() {
 				<Route path="*" element={<NotFound/>}></Route>
 			</Routes>
 			{/* Footer */}
+			
 			<Footer />
 		</BrowserRouter>
 	);
