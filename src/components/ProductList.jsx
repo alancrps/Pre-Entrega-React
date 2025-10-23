@@ -17,6 +17,10 @@ const ProductList = () => {
 		fetchMotos();
 	}, []);
 
+	const handleAddToCart = (moto) => {
+		alert(`${moto.brand} ${moto.model} se agregó al carrito`)
+	}
+
 	if (loading) {
 		return (
 			<div className="text-center mt-5">
@@ -37,7 +41,7 @@ const ProductList = () => {
 						xs={12} 
 						className="mb-4 d-flex justify-content-center"
 					>
-						<ProductCard moto={moto} />
+						<ProductCard moto={moto} addToCart={handleAddToCart} />
 					</Col>
 				))}
 			</Row>

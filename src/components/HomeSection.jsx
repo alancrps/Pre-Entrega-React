@@ -22,7 +22,7 @@ const HomeSection = () => {
 	];
 
 	return (
-		<Carousel className='border-bottom' fade interval={3000} controls indicators>
+		<Carousel className='border-bottom ' fade interval={3000} controls indicators>
 			{images.map((item, index) => (
 				<Carousel.Item key={index}>
 					<img
@@ -41,7 +41,9 @@ const HomeSection = () => {
 					</Carousel.Caption>
 				</Carousel.Item>
 			))}
+			
 		</Carousel>
+		
 	);
 };
 

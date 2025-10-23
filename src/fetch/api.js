@@ -1,7 +1,7 @@
 export const getMotos = async () => {
 	try {
 		const response = await fetch('https://bikecorps-api.onrender.com/motos');
-		if (!response.ok) throw new Error('Error al obtener las motos');
+		if (!response.ok) throw new Error('Error al obtener los datos');
 		return await response.json();
 	} catch (error) {
 		console.error(error);

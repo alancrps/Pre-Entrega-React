@@ -24,7 +24,7 @@ export default function Header() {
 	return (
 		<Navbar bg="white" expand="lg" className="custom-font border-bottom py-2">
 			<Container fluid>
-				<Navbar.Brand href="#" className="d-flex align-items-center text-dark">
+				<Navbar.Brand href="/" className="d-flex align-items-center text-dark">
 					<Image
 						src={Logo}
 						alt="BikeCorps"
