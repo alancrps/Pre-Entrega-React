@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import HomeSection from '../components/HomeSection';
-import ProductList from '../components/ProductList'; // opcional si querés mostrar productos
+import ProductList from '../components/ProductList'; 
 
 export default function HomePage() {
 	return (
