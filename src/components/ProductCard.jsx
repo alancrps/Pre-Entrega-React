@@ -1,4 +1,3 @@
-// src/components/ProductCard.jsx
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
@@ -14,7 +13,7 @@ const ProductCard = ({ moto }) => {
 				}
 				alt={`${moto.brand} ${moto.model}`}
 				className="card-img-top"
-				style={{ objectFit: 'cover', width: '100%', height: '200px' }}
+				style={{ objectFit: 'cover', width: '100%', height: '250px' }}
 			/>
 			<Card.Body className="d-flex flex-column align-items-center justify-content-between">
 				<Card.Title>{`${moto.brand} ${moto.model}`}</Card.Title>

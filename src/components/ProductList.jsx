@@ -10,7 +10,8 @@ const ProductList = () => {
 	useEffect(() => {
 		const fetchMotos = async () => {
 			const data = await getMotos();
-			setMotos(data);
+			const sorted = data.sort((a, b) => a.id - b.id);
+			setMotos(sorted);
 			setLoading(false);
 		};
 		fetchMotos();

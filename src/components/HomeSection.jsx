@@ -16,7 +16,7 @@ const HomeSection = () => {
 		},
 		{
 			src: 'https://wallpapers.com/images/hd/dirt-bike-sunset-view-ih1d6rcq64y3d0ap.jpg',
-			caption: 'Tu viaje empieza ahora',
+			caption: 'Tu aventura empieza ahora',
 			description: 'Conocé nuestras motos enduro',
 		},
 	];
