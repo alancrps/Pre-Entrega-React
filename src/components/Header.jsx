@@ -24,7 +24,11 @@ export default function Header() {
 	return (
 		<Navbar bg="white" expand="lg" className="custom-font border-bottom py-2">
 			<Container fluid>
-				<Navbar.Brand href="/" className="d-flex align-items-center text-dark">
+				<Navbar.Brand
+					as={Link}
+					to="/"
+					className="d-flex align-items-center text-dark"
+				>
 					<Image
 						src={Logo}
 						alt="BikeCorps"
@@ -82,7 +86,8 @@ export default function Header() {
 						)}
 						{!isAuth ? (
 							<Button
-								href="/login"
+								as={Link}
+								to="/login"
 								variant="danger"
 								className="ms-3 fw-bold text-white px-3"
 							>
