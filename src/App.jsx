@@ -17,24 +17,19 @@ import '../src/App.css'
 
 function App() {
 	return (
-		<BrowserRouter basename="/Pre-Entrega-React">
-			{/* Header */}
-			<Header />
-			{/* Rutas */}
-			
-			<Routes>
-				<Route path="/" element={<HomePage />}></Route>
-				<Route path="/login" element={<Login />}></Route>
-				<Route path="/products" element={<Products />}></Route>
-				<Route path="/contact" element={<Contact />}></Route>
-				<Route path="/profile/:id" element={<ProtectedRoute><Profile/></ProtectedRoute>}></Route>
-				<Route path="/admin" element={<ProtectedRoute><Admin/></ProtectedRoute>}></Route>
-				<Route path="*" element={<NotFound/>}></Route>
-			</Routes>
-			{/* Footer */}
-			
-			<Footer />
-		</BrowserRouter>
+		<>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/profile/:id" element={<ProtectedRoute><Profile/></ProtectedRoute>} />
+        <Route path="/admin" element={<ProtectedRoute><Admin/></ProtectedRoute>} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </>
 	);
 }
 

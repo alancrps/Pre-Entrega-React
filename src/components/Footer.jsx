@@ -6,6 +6,7 @@ import { faWhatsapp, faFacebook, faInstagram, faTwitter } from '@fortawesome/fre
 
 import '../assets/styles/Footer.css';
 import '../assets/fonts/custom-font.css';
+import Logo from '../assets/images/Logo.png';
 
 export default function Footer() {
 	const redColor = '#FF0000';
@@ -17,7 +18,7 @@ export default function Footer() {
 					{/* Logo */}
 					<Col md={4} className="d-flex align-items-center justify-content-center">
 						<Image
-							src="/src/assets/images/Logo.png"
+							src={Logo}
 							alt="Logo"
 							fluid
 							style={{ maxHeight: '80px', marginRight: '10px' }}
